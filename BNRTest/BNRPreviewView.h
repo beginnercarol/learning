@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BNRPreviewView : UIView
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
+
 @end
 
 NS_ASSUME_NONNULL_END

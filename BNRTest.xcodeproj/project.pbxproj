@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		818EBE1C22E1E24100B5327B /* BNRPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE1B22E1E24100B5327B /* BNRPreviewView.m */; };
+		818EBE1F22E2DCAC00B5327B /* BNRStatusManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE1E22E2DCAC00B5327B /* BNRStatusManager.m */; };
+		818EBE2322E2FBE700B5327B /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE2222E2FBE700B5327B /* Utility.m */; };
+		818EBE2622E2FFDA00B5327B /* BNRTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE2522E2FFDA00B5327B /* BNRTextField.m */; };
+		818EBE2922E30F6500B5327B /* CACamPhotoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE2822E30F6500B5327B /* CACamPhotoDelegate.m */; };
+		818EBE2D22E3117600B5327B /* LCWordSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE2C22E3117600B5327B /* LCWordSearch.m */; };
 		81DD7D6622E1A5C40060B794 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D6522E1A5C40060B794 /* AppDelegate.m */; };
 		81DD7D6922E1A5C40060B794 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D6822E1A5C40060B794 /* ViewController.m */; };
 		81DD7D6C22E1A5C40060B794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DD7D6A22E1A5C40060B794 /* Main.storyboard */; };
@@ -39,6 +44,16 @@
 /* Begin PBXFileReference section */
 		818EBE1A22E1E24100B5327B /* BNRPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPreviewView.h; sourceTree = "<group>"; };
 		818EBE1B22E1E24100B5327B /* BNRPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPreviewView.m; sourceTree = "<group>"; };
+		818EBE1D22E2DCAC00B5327B /* BNRStatusManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRStatusManager.h; sourceTree = "<group>"; };
+		818EBE1E22E2DCAC00B5327B /* BNRStatusManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRStatusManager.m; sourceTree = "<group>"; };
+		818EBE2122E2FBE700B5327B /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		818EBE2222E2FBE700B5327B /* Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		818EBE2422E2FFDA00B5327B /* BNRTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRTextField.h; sourceTree = "<group>"; };
+		818EBE2522E2FFDA00B5327B /* BNRTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRTextField.m; sourceTree = "<group>"; };
+		818EBE2722E30F6500B5327B /* CACamPhotoDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACamPhotoDelegate.h; sourceTree = "<group>"; };
+		818EBE2822E30F6500B5327B /* CACamPhotoDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CACamPhotoDelegate.m; sourceTree = "<group>"; };
+		818EBE2B22E3117600B5327B /* LCWordSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCWordSearch.h; sourceTree = "<group>"; };
+		818EBE2C22E3117600B5327B /* LCWordSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCWordSearch.m; sourceTree = "<group>"; };
 		81DD7D6122E1A5C40060B794 /* BNRTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNRTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DD7D6422E1A5C40060B794 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81DD7D6522E1A5C40060B794 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +99,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		818EBE2022E2FB0000B5327B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				818EBE2122E2FBE700B5327B /* Utility.h */,
+				818EBE2422E2FFDA00B5327B /* BNRTextField.h */,
+				818EBE2522E2FFDA00B5327B /* BNRTextField.m */,
+				818EBE2222E2FBE700B5327B /* Utility.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		818EBE2A22E3115900B5327B /* WordSearch */ = {
+			isa = PBXGroup;
+			children = (
+				818EBE2B22E3117600B5327B /* LCWordSearch.h */,
+				818EBE2C22E3117600B5327B /* LCWordSearch.m */,
+			);
+			path = WordSearch;
+			sourceTree = "<group>";
+		};
 		81DD7D5822E1A5C40060B794 = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +142,18 @@
 		81DD7D6322E1A5C40060B794 /* BNRTest */ = {
 			isa = PBXGroup;
 			children = (
+				818EBE2A22E3115900B5327B /* WordSearch */,
+				818EBE2022E2FB0000B5327B /* Utility */,
 				81DD7D6422E1A5C40060B794 /* AppDelegate.h */,
 				81DD7D6522E1A5C40060B794 /* AppDelegate.m */,
 				81DD7D6722E1A5C40060B794 /* ViewController.h */,
 				81DD7D6822E1A5C40060B794 /* ViewController.m */,
 				81DD7D9622E1AFA00060B794 /* CACameraViewController.h */,
 				81DD7D9722E1AFA00060B794 /* CACameraViewController.m */,
+				818EBE2722E30F6500B5327B /* CACamPhotoDelegate.h */,
+				818EBE2822E30F6500B5327B /* CACamPhotoDelegate.m */,
+				818EBE1D22E2DCAC00B5327B /* BNRStatusManager.h */,
+				818EBE1E22E2DCAC00B5327B /* BNRStatusManager.m */,
 				818EBE1A22E1E24100B5327B /* BNRPreviewView.h */,
 				818EBE1B22E1E24100B5327B /* BNRPreviewView.m */,
 				81DD7D6A22E1A5C40060B794 /* Main.storyboard */,
@@ -274,9 +315,14 @@
 			files = (
 				81DD7D6922E1A5C40060B794 /* ViewController.m in Sources */,
 				818EBE1C22E1E24100B5327B /* BNRPreviewView.m in Sources */,
+				818EBE2D22E3117600B5327B /* LCWordSearch.m in Sources */,
+				818EBE1F22E2DCAC00B5327B /* BNRStatusManager.m in Sources */,
 				81DD7D7422E1A5C70060B794 /* main.m in Sources */,
+				818EBE2622E2FFDA00B5327B /* BNRTextField.m in Sources */,
+				818EBE2322E2FBE700B5327B /* Utility.m in Sources */,
 				81DD7D6622E1A5C40060B794 /* AppDelegate.m in Sources */,
 				81DD7D9822E1AFA00060B794 /* CACameraViewController.m in Sources */,
+				818EBE2922E30F6500B5327B /* CACamPhotoDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

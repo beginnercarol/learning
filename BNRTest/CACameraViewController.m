@@ -9,6 +9,7 @@
 #import "CACameraViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "BNRPreviewView.h"
+#import "CACamPhotoDelegate.h"
 
 @interface CACameraViewController ()
 @property (nonatomic, strong) AVCaptureSession *session;
@@ -17,7 +18,7 @@
 @property (nonatomic, strong) AVCaptureVideoDataOutput *videoOutput;
 @property (nonatomic, strong) AVCapturePhotoOutput *photoOutput;
 @property (nonatomic, strong) BNRPreviewView *preview;
-
+@property (nonatomic)NSMutableDictionary<NSNumber *, CACamPhotoDelegate *> *inProgressPhotoCaptureDelegate;
 @end
 
 @implementation CACameraViewController
@@ -37,6 +38,14 @@
             [self setupCatureSession];
             break;
             
+        case AVAuthorizationStatusNotDetermined: {
+            [AVCaptureDevice requestAccessForMediaType: AVMediaTypeVideo completionHandler:^(BOOL granted) {
+                if (granted) {
+                    [self setupCatureSession];
+                }
+            }];
+            break;
+        }
         default:
             break;
     }
@@ -44,6 +53,8 @@
 
 - (void)setupCatureSession {
     _session = [[AVCaptureSession alloc] init];
+    [self.session beginConfiguration];
+    [self.session setSessionPreset:AVCaptureSessionPresetPhoto];
     AVCaptureDevice *device = nil;
     device = [AVCaptureDevice defaultDeviceWithDeviceType:AVCaptureDeviceTypeBuiltInDualCamera mediaType:AVMediaTypeVideo position:AVCaptureDevicePositionBack];
     if (device != nil) {
@@ -67,8 +78,10 @@
         [_session addOutput: output];
         _photoOutput = output;
     }
+    [self.session commitConfiguration];
+    [self.session startRunning];
     
-    _preview.videoPreviewLayer.session = _session;
+    self.preview.videoPreviewLayer.session = _session;
 }
 
 
