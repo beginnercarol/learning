@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		818EBE1C22E1E24100B5327B /* BNRPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 818EBE1B22E1E24100B5327B /* BNRPreviewView.m */; };
 		81DD7D6622E1A5C40060B794 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D6522E1A5C40060B794 /* AppDelegate.m */; };
 		81DD7D6922E1A5C40060B794 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D6822E1A5C40060B794 /* ViewController.m */; };
 		81DD7D6C22E1A5C40060B794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DD7D6A22E1A5C40060B794 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		81DD7D7422E1A5C70060B794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D7322E1A5C70060B794 /* main.m */; };
 		81DD7D7E22E1A5C70060B794 /* BNRTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D7D22E1A5C70060B794 /* BNRTestTests.m */; };
 		81DD7D8922E1A5C70060B794 /* BNRTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D8822E1A5C70060B794 /* BNRTestUITests.m */; };
+		81DD7D9822E1AFA00060B794 /* CACameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81DD7D9722E1AFA00060B794 /* CACameraViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		818EBE1A22E1E24100B5327B /* BNRPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRPreviewView.h; sourceTree = "<group>"; };
+		818EBE1B22E1E24100B5327B /* BNRPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRPreviewView.m; sourceTree = "<group>"; };
 		81DD7D6122E1A5C40060B794 /* BNRTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNRTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DD7D6422E1A5C40060B794 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81DD7D6522E1A5C40060B794 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		81DD7D8422E1A5C70060B794 /* BNRTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BNRTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DD7D8822E1A5C70060B794 /* BNRTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRTestUITests.m; sourceTree = "<group>"; };
 		81DD7D8A22E1A5C70060B794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81DD7D9622E1AFA00060B794 /* CACameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CACameraViewController.h; sourceTree = "<group>"; };
+		81DD7D9722E1AFA00060B794 /* CACameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CACameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				81DD7D6522E1A5C40060B794 /* AppDelegate.m */,
 				81DD7D6722E1A5C40060B794 /* ViewController.h */,
 				81DD7D6822E1A5C40060B794 /* ViewController.m */,
+				81DD7D9622E1AFA00060B794 /* CACameraViewController.h */,
+				81DD7D9722E1AFA00060B794 /* CACameraViewController.m */,
+				818EBE1A22E1E24100B5327B /* BNRPreviewView.h */,
+				818EBE1B22E1E24100B5327B /* BNRPreviewView.m */,
 				81DD7D6A22E1A5C40060B794 /* Main.storyboard */,
 				81DD7D6D22E1A5C70060B794 /* Assets.xcassets */,
 				81DD7D6F22E1A5C70060B794 /* LaunchScreen.storyboard */,
@@ -263,8 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81DD7D6922E1A5C40060B794 /* ViewController.m in Sources */,
+				818EBE1C22E1E24100B5327B /* BNRPreviewView.m in Sources */,
 				81DD7D7422E1A5C70060B794 /* main.m in Sources */,
 				81DD7D6622E1A5C40060B794 /* AppDelegate.m in Sources */,
+				81DD7D9822E1AFA00060B794 /* CACameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHHY239973;
 				INFOPLIST_FILE = BNRTest/Info.plist;
@@ -444,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carol.bnr.BNRTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -452,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LHHY239973;
 				INFOPLIST_FILE = BNRTest/Info.plist;
@@ -461,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.carol.bnr.BNRTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
