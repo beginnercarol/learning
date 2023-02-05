@@ -1,2 +1,4 @@
+Insert line0
 hello. world
+Insert line1
 Another line from learning0202
